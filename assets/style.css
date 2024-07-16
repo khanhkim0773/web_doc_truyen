@@ -1,0 +1,340 @@
+/*
+1. Làm từ ngoài vào trong
+2. Lmà từ trên xuống dưới
+3.Tổng quan đến chi tiết
+*/
+
+/*
+1. vị trí
+2. kích thước (width, height)
+3. màu sắc
+4. kiểu dáng
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: JetBrains mono, Helvetica, Arial, sans-serif;
+  background-color: #F5F5FB;
+}
+
+body{
+    background-color: #F5F5FB;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  height: 60px;
+  background-color: #F5F5FB;
+  position: relative;
+  top: 0;
+}
+
+#navhead li {
+  display: inline-block;
+}
+
+#navhead li .menu {
+  font-size: 16px;
+  color: #F5F5FB;
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+  background-color: #B35DCA;
+  border: 2px solid #fff;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#navhead li a .logo {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 100px;
+}
+
+#navhead li .Reg {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+#navhead > li > input {
+  height: 36px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 44%;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#navhead li .search {
+  position: absolute;
+  top: 50%;
+  right: 38%;
+  transform: translateY(-50%);
+  background-color: #520F7B;
+}
+
+#navhead li .Log {
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  transform: translateY(-50%);
+}
+
+#navhead li .menu:hover {
+  background-color: #6f88fc;
+  color: white;
+  cursor: pointer;
+}
+
+#nav {
+  width: 100%;
+  height: 40px;
+  background-color: #491970;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+#navSub > li {
+  display: inline-block;
+}
+
+#nav #navSub .nav {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+#nav .nav {
+  padding: 11px 12px;
+  display: block;
+}
+
+#nav #navSub .type {
+  padding-right: 150px;
+  position: absolute;
+  left: 15%;
+}
+
+#nav #navSub .follow {
+  position: absolute;
+  right: 55%;
+}
+
+#nav #navSub .history {
+  position: absolute;
+  right: 45%;
+}
+
+#nav #navSub .upload {
+  position: absolute;
+  right: 33%;
+}
+
+#nav #navSub .notification {
+  position: absolute;
+  right: 5%;
+}
+
+#nav #navSub .nav:hover {
+  background-color: white;
+  color: black;
+}
+
+#nav .subType a {
+  text-decoration: none;
+  color: black;
+}
+
+.subType {
+  top: 100%;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-width: 235px;
+  left: 225px;
+  list-style: none;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+#nav li:hover .subType {
+  display: inline-block;
+}
+
+#nav .subType li:hover a {
+  background-color: #6f88fc;
+  display: block;
+  color: red;
+}
+
+#slider {
+  background-color: #fff;
+  min-height: 1000px;
+}
+
+#poster img {
+  margin-top: 16px;
+  display: block;
+  width: 100%;
+  height: auto;
+  height: 367px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#slider > #board {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  display: flex;
+  background-color: #f5f5fb;
+}
+
+#slider #board .leader {
+  background-color: white;
+  float: right;
+  width: 25%;
+  border-radius: 16px;
+  margin: 16px;
+  height: 80%;
+  margin: auto;
+}
+
+#slider #flexbox .newnovel {
+  position: relative;
+  width: 1300px;
+  height: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 8px;
+}
+
+#slider #flexbox {
+  width: 100%;
+  min-height: 800px;
+  position: relative;
+  background-color: #F5F5FB;
+}
+
+#slider #flexbox h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  color: black;
+}
+
+#slider #flexbox p {
+  font-size: small;
+}
+
+.product {
+  border: 1px solid #333;
+  display: inline-block;
+  margin: 4px;
+}
+
+#slider .story {
+  width: 410px;
+  height: 150px;
+  position: relative;
+  background-color: #f3e7f8;
+  border-radius: 8px;
+  padding: 12px;
+  display: inline-block;
+  margin: 8px;
+}
+
+#slider .story img {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+}
+
+#slider .story .str-name {
+  position: relative;
+}
+
+#slider #flexbox .content {
+  width: 280px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+}
+
+#slider #pagination a{
+    color: #333;
+
+}
+
+#slider #pagination {
+  position: relative;
+  top: 700px;
+  text-align: center;
+
+}
+
+#footer {
+  min-height: 230px;
+}
+
+#footer #infor img {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 150px;
+}
+
+#footer #infor {
+  position: absolute;
+}
+
+#footer #infor .novel,
+#footer #infor .contact {
+  margin-left: 150px;
+  margin-top: 10px;
+}
+
+#useful-link {
+  position: relative;
+}
+
+#footer > #useful-link > ul {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+#footer > #useful-link > ul::after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #333;
+  left: -20px;
+  height: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
